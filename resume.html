@@ -25,16 +25,22 @@
     rel="stylesheet"
   />
   <style>
-    .bg-color {
-      background: #e2e2e2;
-    }
     h1 {
       color: #02215a;
+    }
+    h4 {
+      font-size: 1.3rem;
+    }
+    p {
+      margin-bottom: 0.5rem;
+    }
+    .bg-color {
+      background: #e2e2e2;
     }
     .color {
       color: #02215a;
     }
-    .color-icon {
+    .icon-color {
       color: #1147ac;
     }
     .fs-48 {
@@ -42,6 +48,9 @@
     }
     .fs-32 {
       font-size: 32px;
+    }
+    .fs-18 {
+      font-size: 18px;
     }
     .border {
       border: 2px solid #f28a33 !important;
@@ -56,38 +65,45 @@
       border-color: #c9c8c8;
       border-width: 2px;
     }
-    .fs-18 {
-      font-size: 18px;
-    }
-    h4 {
-      font-size: 1.3rem;
-    }
-    p {
-      margin-bottom: 0.5rem;
+    .custom-link {
+      text-decoration: none; /* Remove underline */
+      color: inherit; /* Inherit color from parent */
     }
     @page {
-      size: auto;
+      size: auto; /* this is required to fit the page in PDF portait A4 form when cmd + p*/
       margin: 0;
     }
   </style>
 </head>
 
 <div class="bg-color p-5">
-  <div #header class="mb-4">
+  <div #header class="mb-1">
     <h1 class="fs-48 font-weight-bold">GURHARMANJIT SINGH</h1>
     <h5 class="font-weight-bold color">Senior Software Engineer</h5>
-    <div class="d-flex">
+    <div class="d-flex flex-wrap">
       <p class="mr-5">
-        <i class="fa color-icon fa-envelope"> </i>
+        <i class="fas fa-envelope icon-color"></i>
         hs23703@gmail.com
       </p>
       <p class="mr-5">
-        <i class="fa color-icon fa-phone"> </i>
+        <i class="fas fa-phone icon-color"></i>
         +91-7508815347
       </p>
       <p class="mr-5">
-        <i class="fa color-icon fa-map-marker"> </i>
+        <i class="fas fa-map-marker-alt icon-color"></i>
         Batala, Punjab, India
+      </p>
+      <p class="mr-5">
+        <a class="custom-link" href="www.linkedin.com/in/ -gurharmanjitsingh">
+          <i class="fab fa-linkedin icon-color"></i>
+          /-gurharmanjitsingh
+        </a>
+      </p>
+      <p class="mr-5">
+        <a class="custom-link" href="https://github.com/Gurharman23">
+          <i class="fab fa-github-square"></i>
+          /Gurharman23
+        </a>
       </p>
     </div>
   </div>
@@ -95,78 +111,168 @@
   <div #main class="row">
     <div #left class="col-4">
       <div #section>
-        <h1 class="font-weight-bold fs-32">SKILLS</h1>
+        <h1 class="font-weight-bold fs-32 text-uppercase">Skills</h1>
         <hr
-          class="
-            border border-bottom border-top border-warning
-            mb-2
-            mt-0
-            rounded
-          "
+          class="border border-bottom border-top border-warning mb-2 mt-0 rounded"
         />
         <div #items class="d-flex flex-wrap mb-5">
-          <p class="border px-2 rounded py-1 m-1 border-item">Javascript</p>
-          <p class="border px-2 rounded py-1 m-1 border-item">ReactJS</p>
-          <p class="border px-2 rounded py-1 m-1 border-item">Redux</p>
-          <p class="border px-2 rounded py-1 m-1 border-item">NodeJS</p>
-          <p class="border px-2 rounded py-1 m-1 border-item">ExpressJS</p>
-          <p class="border px-2 rounded py-1 m-1 border-item">PostgreSQL</p>
-          <p class="border px-2 rounded py-1 m-1 border-item">HTML</p>
-          <p class="border px-2 rounded py-1 m-1 border-item">CSS</p>
-          <p class="border px-2 rounded py-1 m-1 border-item">Typescript</p>
-          <p class="border px-2 rounded py-1 m-1 border-item">Git</p>
-          <p class="border px-2 rounded py-1 m-1 border-item">AWS</p>
-          <p class="border px-2 rounded py-1 m-1 border-item">Jenkins</p>
-          <p class="border px-2 rounded py-1 m-1 border-item">Angular</p>
-          <p class="border px-2 rounded py-1 m-1 border-item">C++</p>
-          <p class="border px-2 rounded py-1 m-1 border-item">Java</p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            Javascript
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            ReactJS
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            Redux (RTK)
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            NodeJS
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            ExpressJS
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            Typescript
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            NestJS
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            Angular
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            SQL
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            PostgreSQL
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            sequilize
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            prisma
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            Jest
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            Cypress
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            HTML
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            CSS
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            SASS
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            Tailwind
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            Bootstrap
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            Material UI
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            C++
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            Java
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            webpack
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            eslint
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            babel
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            Git
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            AWS
+          </p>
+
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            JIRA
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            confluence
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            Jenkins
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            husky
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            babel
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            new relic
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            splunk
+          </p>
         </div>
       </div>
       <div #section></div>
-      <h1 class="font-weight-bold fs-32">SUBJECTS</h1>
+      <h1 class="font-weight-bold fs-32 text-uppercase">learnings</h1>
       <hr
         class="border border-bottom border-top border-warning mb-2 mt-0 rounded"
       />
       <div #items class="d-flex flex-wrap mb-5">
-        <p class="border px-2 rounded py-1 m-1 border-item">Data Structure</p>
-        <p class="border px-2 rounded py-1 m-1 border-item">Algorithm</p>
-        <p class="border px-2 rounded py-1 m-1 border-item">DBMS</p>
-        <p class="border px-2 rounded py-1 m-1 border-item">Operatng Systems</p>
-        <p class="border px-2 rounded py-1 m-1 border-item">
+        <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+          web development
+        </p>
+        <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+          cloud computing
+        </p>
+        <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+          distributed system
+        </p>
+        <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+          Data Structures
+        </p>
+        <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+          Algorithms
+        </p>
+        <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+          problem solving
+        </p>
+        <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+          DBMS
+        </p>
+        <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+          OOPS
+        </p>
+        <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+          Operatng Systems
+        </p>
+        <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+          memory management
+        </p>
+        <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
           Computer Networks
         </p>
-        <p class="border px-2 rounded py-1 m-1 border-item">OOPS</p>
-        <p class="border px-2 rounded py-1 m-1 border-item">System Design</p>
+        <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+          System Design
+        </p>
       </div>
       <div #section></div>
-      <h1 class="font-weight-bold fs-32">LANGUAGES</h1>
+      <h1 class="font-weight-bold fs-32 text-uppercase">languages</h1>
       <hr
         class="border border-bottom border-top border-warning mb-2 mt-0 rounded"
       />
       <div #items class="mb-5">
-        <p class="font-weight-bold py-3 m-0 lang-border">
-          English: <span class="ml-4 color-icon">Fluent</span>
-        </p>
-        <p class="font-weight-bold py-3 m-0 lang-border">
-          Hindi: <span class="ml-4 color-icon">Fluent</span>
-        </p>
-        <p class="font-weight-bold py-3 m-0 lang-border">
-          Punjabi: <span class="ml-4 color-icon">Native</span>
-        </p>
-      </div>
-      <div #section>
-        <h1 class="font-weight-bold fs-32">REFERENCES</h1>
-        <div #items class="mb-5">
-          <p class="font-weight-bold">
-            Linkedin: <br />
-            <span class="text-secondary">
-              www.linkedin.com/in/ -gurharmanjitsingh</span
-            >
-          </p>
-          <p class="font-weight-bold">
-            GitLab: <br />
-            <span class="text-secondary"> https://gitlab.com/hs23703</span>
-          </p>
+        <div class="font-weight-bold py-3 m-0 lang-border d-flex flex-column">
+          <div class="text-uppercase text-center">English, Hindi & Punjabi</div>
+          <div class="ml-4 icon-color text-uppercase text-center">Fluent</div>
         </div>
       </div>
     </div>
@@ -174,109 +280,116 @@
       <div #section>
         <h1 class="font-weight-bold fs-32">ABOUT ME</h1>
         <hr
-          class="
-            border border-bottom border-top border-warning
-            mb-2
-            mt-0
-            rounded
-          "
+          class="border border-bottom border-top border-warning mb-2 mt-0 rounded"
         />
         <div #items>
-          <p class="fs-18 color-icon font-italic">
-            I am a Software Engineer with 3.5 years of an experience in
-            fullstack development React/Nodejs. Looking for a good opportunity
-            in software development.
+          <p class="fs-18 icon-color font-italic">
+            I am a Software Engineer with four years of experience in full-stack
+            development, specializing in React and Node.js. Currently seeking
+            new opportunities in software development to further expand my
+            skills and contribute to impactful projects.
           </p>
         </div>
       </div>
       <div #section>
         <h1 class="font-weight-bold fs-32">EXPERIENCE</h1>
         <hr
-          class="
-            border border-bottom border-top border-warning
-            mb-2
-            mt-0
-            rounded
-          "
+          class="border border-bottom border-top border-warning mb-2 mt-0 rounded"
         />
         <div #items>
           <div #item class="mb-3">
             <h4>
               Senior Software Engineer
-              <span class="color-icon"> | Talentica</span>
+              <span class="icon-color"> | Talentica</span>
             </h4>
             <div #dateNplace class="d-flex justify-content-between">
               <p>
-                <i class="fa color-icon fa-calendar"> </i> 08 2021 – Present
+                <i class="fa icon-color fa-calendar"> </i> 08 2021 – Present
               </p>
-              <p><i class="fa color-icon fa-map-marker"> </i> Pune(Remote)</p>
+              <p><i class="fa icon-color fa-map-marker"> </i> Pune(Remote)</p>
             </div>
             <ul class="mb-0">
               <li>
-                Worked on an Issue Tracking System, contributed in FE and BE
-                development using ReactJS, Redux, Cypress, Express, REST,
-                PostgreSQL, Redis
+                Spearheaded development on an Issue Tracking System, playing a
+                pivotal role in both front-end (FE) and back-end (BE) tasks.
+                Leveraged technologies including ReactJS, Redux, Cypress,
+                Express, and REST, alongside managing data with PostgreSQL and
+                Redis.
               </li>
               <li>
-                Efficiently utilised AWS cloud services to make product more
-                efficient and robust
+                Orchestrated the optimization of product efficiency and
+                robustness by adeptly harnessing AWS cloud services, ensuring
+                seamless integration and operation within the system
+                architecture.
               </li>
               <li>
-                Actively engineered in many major bugs, features and migration
-                efforts
+                Played an active role in identifying and resolving critical
+                bugs, implementing new features, and leading various migration
+                projects, contributing significantly to the overall advancement
+                and stability of the system.
               </li>
             </ul>
             <div>
-              <span class=""><strong>Key Achievements:</strong></span> Smooth
-              data migration of 350k active accounts in production, Successful
-              onboarding of a new production environment, Complete transition to
-              SQS based asynchronous job handling replacing the native Redis
-              based system.
+              <span class=""><strong>Notable Accomplishments:</strong></span>
+              Orchestrated the seamless migration of 350k active accounts in the
+              production environment, ensuring minimal disruption. Successfully
+              onboarded a new production environment, facilitating smooth
+              integration and operational readiness. Spearheaded the complete
+              transition from a Redis-based system to an SQS-based asynchronous
+              job handling architecture, enhancing scalability and performance.
             </div>
           </div>
           <div #item>
             <h4>
               Associate Software Engineer
-              <span class="color-icon">| ClickLabs</span>
+              <span class="icon-color">| ClickLabs</span>
             </h4>
             <div #dateNplace class="d-flex justify-content-between">
               <p>
-                <i class="fa color-icon fa-calendar"> </i> 07 2020 – 08 2021
+                <i class="fa icon-color fa-calendar"> </i> 07 2020 – 08 2021
               </p>
-              <p><i class="fa color-icon fa-map-marker"> </i> WFH</p>
+              <p><i class="fa icon-color fa-map-marker"> </i> WFH</p>
             </div>
             <ul>
               <li>
-                Working on a SAAS based product for creating a hyperlocal
-                marketplace.
+                Contributed to the development of a Software as a Service (SAAS)
+                solution tailored for establishing hyperlocal marketplaces.
               </li>
               <li>
-                Working as FE Developer using the technology stack (Angular,
-                HTML, CSS, Typescript, Node.js)
+                Served as a Front-End (FE) Developer proficient in Angular,
+                HTML, CSS, TypeScript, and Node.js, shaping the technological
+                landscape of the project.
               </li>
               <li>
-                Worked on payment gateways , 3rd party integrations,
-                optimization and feature modules.
+                Skillfully managing payment gateways, integrating third-party
+                solutions, optimizing performance, and crafting essential
+                feature modules to enhance user experience and functionality.
               </li>
               <li>
-                Good experience in Angular state management, Rxjs, Angular
-                Univeral(server-side rendering), Redis.
+                Possessing extensive expertise in Angular state management,
+                RxJS, Angular Universal for server-side rendering, and
+                leveraging Redis for efficient data management.
               </li>
             </ul>
           </div>
           <div #item>
-            <h4>SD Intern <span class="color-icon"> | Accolite</span></h4>
+            <h4>SD Intern <span class="icon-color"> | Accolite</span></h4>
             <div #dateNplace class="d-flex justify-content-between">
               <p>
-                <i class="fa color-icon fa-calendar"> </i> 05 2020 – 07 2020
+                <i class="fa icon-color fa-calendar"> </i> 05 2020 – 07 2020
               </p>
-              <p><i class="fa color-icon fa-map-marker"> </i> WFH</p>
+              <p><i class="fa icon-color fa-map-marker"> </i> WFH</p>
             </div>
             <ul>
-              <li>Worked on a web project using Spring Boot, Angular.</li>
               <li>
-                Worked on an online portal for management of Accolite University
-                Training Programme.
+                Contributed to a web project, collaborating on Spring Boot for
+                back-end functionality and Angular for front-end development,
+                fostering cohesion between these technologies.
+              </li>
+              <li>
+                Participated in the development of an online portal designed to
+                manage the Accolite University Training Programme, focusing on
+                delivering a functional and user-centric platform.
               </li>
             </ul>
           </div>
@@ -285,18 +398,13 @@
       <div #section>
         <h1 class="font-weight-bold fs-32">EDUCATION</h1>
         <hr
-          class="
-            border border-bottom border-top border-warning
-            mb-2
-            mt-0
-            rounded
-          "
+          class="border border-bottom border-top border-warning mb-2 mt-0 rounded"
         />
         <div #items>
           <div #item>
             <h4>
               B.Tech | CSE
-              <span class="color-icon">| NIT Jalandhar | 2020</span>
+              <span class="icon-color">| NIT Jalandhar | 2020</span>
             </h4>
             <ul>
               <li>CGPA: 7.23</li>
@@ -305,7 +413,7 @@
           <div #item>
             <h4>
               Senior Secondary | Maths
-              <span class="color-icon">| S.L Bawa School, Batala | 2016</span>
+              <span class="icon-color">| S.L Bawa School, Batala | 2016</span>
             </h4>
             <ul>
               <li>Percentage: 87</li>
@@ -314,7 +422,7 @@
           <div #item>
             <h4>
               Matriculation
-              <span class="color-icon">| R.D Khosla School | 2014</span>
+              <span class="icon-color">| R.D Khosla School | 2014</span>
             </h4>
             <ul>
               <li>CGPA: 8.8</li>
