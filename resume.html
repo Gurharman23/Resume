@@ -35,7 +35,7 @@
       margin-bottom: 0.5rem;
     }
     .bg-color {
-      background: #e2e2e2;
+      background: #ced4da;
     }
     .color {
       color: #02215a;
@@ -48,9 +48,6 @@
     }
     .fs-32 {
       font-size: 32px;
-    }
-    .fs-18 {
-      font-size: 18px;
     }
     .border {
       border: 2px solid #f28a33 !important;
@@ -65,7 +62,8 @@
       border-color: #c9c8c8;
       border-width: 2px;
     }
-    .custom-link {
+    .custom-link,
+    .custom-link:hover {
       text-decoration: none; /* Remove underline */
       color: inherit; /* Inherit color from parent */
     }
@@ -77,45 +75,63 @@
 </head>
 
 <div class="bg-color p-5">
+  <!-- header  -->
   <div #header class="mb-1">
     <h1 class="fs-48 font-weight-bold">GURHARMANJIT SINGH</h1>
     <h5 class="font-weight-bold color">Senior Software Engineer</h5>
     <div class="d-flex flex-wrap">
       <p class="mr-5">
-        <i class="fas fa-envelope icon-color"></i>
-        hs23703@gmail.com
+        <a class="custom-link" target="_blank" href="mailto:hs23703@gmail.com">
+          <i class="fas fa-envelope icon-color"></i>
+          hs23703@gmail.com
+        </a>
       </p>
       <p class="mr-5">
-        <i class="fas fa-phone icon-color"></i>
-        +91-7508815347
+        <a class="custom-link" target="_blank" href="tel:+917508815347">
+          <i class="fas fa-phone icon-color"></i>
+          +91-7508815347
+        </a>
       </p>
       <p class="mr-5">
-        <i class="fas fa-map-marker-alt icon-color"></i>
-        Batala, Punjab, India
+        <a class="custom-link" target="_blank" href="https://g.co/kgs/DX1XfM5">
+          <i class="fas fa-map-marker-alt icon-color"></i>
+          Batala, Punjab, India
+        </a>
       </p>
       <p class="mr-5">
-        <a class="custom-link" href="www.linkedin.com/in/ -gurharmanjitsingh">
+        <a
+          class="custom-link"
+          target="_blank"
+          href="https://www.linkedin.com/in/gurharmanjitsingh"
+        >
           <i class="fab fa-linkedin icon-color"></i>
           /-gurharmanjitsingh
         </a>
       </p>
       <p class="mr-5">
-        <a class="custom-link" href="https://github.com/Gurharman23">
-          <i class="fab fa-github-square"></i>
+        <a
+          class="custom-link"
+          target="_blank"
+          href="https://github.com/Gurharman23"
+        >
+          <i class="fab fa-github-square icon-color"></i>
           /Gurharman23
         </a>
       </p>
     </div>
   </div>
 
+  <!-- main contents  -->
   <div #main class="row">
+    <!-- left content  -->
     <div #left class="col-4">
-      <div #section>
+      <!-- skills section  -->
+      <div #section class="mb-3">
         <h1 class="font-weight-bold fs-32 text-uppercase">Skills</h1>
         <hr
           class="border border-bottom border-top border-warning mb-2 mt-0 rounded"
         />
-        <div #items class="d-flex flex-wrap mb-5">
+        <div #items class="d-flex flex-wrap">
           <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
             Javascript
           </p>
@@ -221,61 +237,69 @@
           </p>
         </div>
       </div>
-      <div #section></div>
-      <h1 class="font-weight-bold fs-32 text-uppercase">learnings</h1>
-      <hr
-        class="border border-bottom border-top border-warning mb-2 mt-0 rounded"
-      />
-      <div #items class="d-flex flex-wrap mb-5">
-        <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
-          web development
-        </p>
-        <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
-          cloud computing
-        </p>
-        <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
-          distributed system
-        </p>
-        <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
-          Data Structures
-        </p>
-        <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
-          Algorithms
-        </p>
-        <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
-          problem solving
-        </p>
-        <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
-          DBMS
-        </p>
-        <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
-          OOPS
-        </p>
-        <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
-          Operatng Systems
-        </p>
-        <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
-          memory management
-        </p>
-        <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
-          Computer Networks
-        </p>
-        <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
-          System Design
-        </p>
+      <!-- learnings section  -->
+      <div #section class="mb-3">
+        <h1 class="font-weight-bold fs-32 text-uppercase">learnings</h1>
+        <hr
+          class="border border-bottom border-top border-warning mb-2 mt-0 rounded"
+        />
+        <div #items class="d-flex flex-wrap">
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            web development
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            cloud computing
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            distributed system
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            Data Structures
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            Algorithms
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            problem solving
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            DBMS
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            OOPS
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            Operatng Systems
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            memory management
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            Computer Networks
+          </p>
+          <p class="border px-2 rounded py-1 m-1 border-item text-capitalize">
+            System Design
+          </p>
+        </div>
       </div>
-      <div #section></div>
-      <h1 class="font-weight-bold fs-32 text-uppercase">languages</h1>
-      <hr
-        class="border border-bottom border-top border-warning mb-2 mt-0 rounded"
-      />
-      <div #items class="mb-5">
-        <div class="font-weight-bold py-3 m-0 lang-border d-flex flex-column">
-          <div class="text-uppercase text-center">English, Hindi & Punjabi</div>
-          <div class="ml-4 icon-color text-uppercase text-center">Fluent</div>
+
+      <!-- languages section  -->
+      <div #section class="mb-3">
+        <h1 class="font-weight-bold fs-32 text-uppercase">languages</h1>
+        <hr
+          class="border border-bottom border-top border-warning mb-2 mt-0 rounded"
+        />
+        <div #items class="">
+          <div class="font-weight-bold py-3 m-0 lang-border d-flex flex-column">
+            <div class="text-uppercase text-center">
+              English, Hindi & Punjabi
+            </div>
+            <div class="ml-4 icon-color text-uppercase text-center">Fluent</div>
+          </div>
         </div>
       </div>
     </div>
+    <!-- right content -->
     <div #right class="col-8">
       <div #section>
         <h1 class="font-weight-bold fs-32">ABOUT ME</h1>
@@ -283,7 +307,7 @@
           class="border border-bottom border-top border-warning mb-2 mt-0 rounded"
         />
         <div #items>
-          <p class="fs-18 icon-color font-italic">
+          <p class="icon-color font-italic">
             I am a Software Engineer with four years of experience in full-stack
             development, specializing in React and Node.js. Currently seeking
             new opportunities in software development to further expand my
@@ -310,17 +334,16 @@
             </div>
             <ul class="mb-0">
               <li>
-                Spearheaded development on an Issue Tracking System, playing a
-                pivotal role in both front-end (FE) and back-end (BE) tasks.
-                Leveraged technologies including ReactJS, Redux, Cypress,
-                Express, and REST, alongside managing data with PostgreSQL and
+                Contributed to the development of an Issue Tracking System,
+                actively participating in both front-end (FE) and back-end (BE)
+                tasks. Utilized technologies such as ReactJS, Redux, Cypress,
+                Express, and REST, while also managing data with PostgreSQL and
                 Redis.
               </li>
               <li>
-                Orchestrated the optimization of product efficiency and
-                robustness by adeptly harnessing AWS cloud services, ensuring
-                seamless integration and operation within the system
-                architecture.
+                Played a role in optimizing product efficiency and robustness by
+                utilizing AWS cloud services effectively, ensuring smooth
+                integration and operation within the system architecture.
               </li>
               <li>
                 Played an active role in identifying and resolving critical
@@ -331,12 +354,14 @@
             </ul>
             <div>
               <span class=""><strong>Notable Accomplishments:</strong></span>
-              Orchestrated the seamless migration of 350k active accounts in the
-              production environment, ensuring minimal disruption. Successfully
-              onboarded a new production environment, facilitating smooth
-              integration and operational readiness. Spearheaded the complete
-              transition from a Redis-based system to an SQS-based asynchronous
-              job handling architecture, enhancing scalability and performance.
+              Executed the seamless data migration of 350k active accounts
+              (100%) in the production environment with minimal disruption.
+              Facilitated the onboarding of a new production environment for
+              smooth integration and operational readiness. Led the transition
+              from a Redis-based system to an SQS-based asynchronous job
+              handling architecture, aiming to enhance scalability, performance,
+              and visibility of async tasks. Successfully reduced the flakiness
+              of legacy test cases from 66% to less than 5%.
             </div>
           </div>
           <div #item>
@@ -361,14 +386,14 @@
                 landscape of the project.
               </li>
               <li>
-                Skillfully managing payment gateways, integrating third-party
+                Skillfully managed the payment gateways, integrating third-party
                 solutions, optimizing performance, and crafting essential
                 feature modules to enhance user experience and functionality.
               </li>
               <li>
                 Possessing extensive expertise in Angular state management,
                 RxJS, Angular Universal for server-side rendering, and
-                leveraging Redis for efficient data management.
+                leveraging Redis and RDBMS for efficient data management.
               </li>
             </ul>
           </div>
